@@ -1,0 +1,106 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+.geral-content {
+    width: 60%;
+    margin: 60px auto 0 auto;
+    float: none;
+}
+
+header {
+    background: #4A148C;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 60%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: block;
+    float: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    float: none;
+}
+
+#quem-somos {
+    background: linear-gradient(to right, #4A148C, #6A1B9A);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.intro {
+    max-width: 600px;
+    margin: auto;
+}
+
+.intro img {
+    width: 50px;
+    height: 50px;
+}
+
+.intro h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+section h2 {
+    text-align: center;
+    color: #4A148C;
+}
+
+section p {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .geral-content, header {
+        width: 90%;
+    }
+
+    header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
